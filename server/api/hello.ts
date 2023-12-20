@@ -2,6 +2,10 @@ import Stripe from "stripe";
 
 const stripe = new Stripe("test");
 
+
+
+
+
 export default defineEventHandler(async (event) => {
   const priceId = getQuery(event).priceId;
 	console.log("PRODUCT RETRIEVAL",getQuery(event));
